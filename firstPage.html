@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details - Prosoquite Company</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #cfcfcf;
-            color: #333;
-        }
+       body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* default font stack */
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfcf;
+    color: #333;
+}
+
 		nav {
     /* position: absolute; */
     /* top: 6px; */
@@ -119,7 +120,11 @@
             margin-bottom: 20px;
             font-family: cursive; 
         }
-
+@media screen and (max-width: 600px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* maintain the same font stack */
+    }
+}
         /* تعديلات للشاشات الصغيرة (أقل من 600 بكسل) */
         @media screen and (max-width: 600px) {
             nav {
